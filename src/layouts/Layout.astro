@@ -15,10 +15,10 @@ const { title,favicon = "/favicon.svg" } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<header class="bg-orange-400 h-20">
+		<header class="bg-gradient-to-t from-blue-300 to-cyan-600   h-20">
 			
 		</header>
-		<menu class="bg-blue-300 flex ">
+		<menu class="bg-blue-300 flex">
 			<li>
 				<a href="/" class=" block px-2 hover:bg-white/35">Inicio</a>
 			</li>
@@ -36,7 +36,7 @@ const { title,favicon = "/favicon.svg" } = Astro.props;
 			</li>
 			
 		</menu>
-		<slot />
+		<slot  />
 	</body>
 </html>
 

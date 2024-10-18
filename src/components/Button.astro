@@ -1,0 +1,15 @@
+---
+const{isEmerald = false} = Astro.props;
+---
+<div class = " h-8 transition-colors duration-300 hover:cursor-pointer hover:bg-sky-600 rounded items-center space-x-2 px-2 inline-flex bg-blue-300 text-black"
+class:list={{"bg-emerald-300 hover:bg-sky-400":isEmerald}}
+>
+    <slot name="start-icon"/>
+    <slot name="text">
+        <span>
+            Soy un boton
+        </span> 
+    </slot>
+    
+    <slot name="end-icon" />
+</div>
